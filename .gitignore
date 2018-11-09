@@ -1,3 +1,9 @@
+*.ndjson
+*.ndjson.gz
+*.mbtiles
+*.mbtiles-journal
+!.gitkeep
+
 # Logs
 logs
 *.log

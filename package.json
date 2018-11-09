@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/hfu/spinel-produce/issues"
   },
-  "homepage": "https://github.com/hfu/spinel-produce#readme"
+  "homepage": "https://github.com/hfu/spinel-produce#readme",
+  "dependencies": {
+    "config": "^2.0.1",
+    "node-fetch": "^2.2.1"
+  }
 }
