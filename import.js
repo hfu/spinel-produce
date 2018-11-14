@@ -7,10 +7,12 @@ const readline = require('readline')
 for (const url of config.get('src')) {
   const path = `${config.get('srcDir')}/${url.split('/').pop()}`
   const rl = readline.createInterface({
-    input: fs.createReadStream(path).pipe(zlib.createGunzip())//,
-//    output: fs.createWriteStream(config.get('dst'))
+    input: fs.createReadStream(path).pipe(zlib.createGunzip())
   })
   rl.on('line', l => {
-    console.log(JSON.stringify(modify(JSON.parse(l))))
+    const f = modify(JSON.parse(l))
+    if (f) {
+      console.log(JSON.stringify(f))
+    }
   })
 }

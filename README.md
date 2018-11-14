@@ -27,5 +27,14 @@ This downloads GeoJSON text sequences from the following URLs.
 - https://osgeo-jp.gitlab.io/spinel-data/gmlk20.ndjson.gz (6.4MB)
 - https://osgeo-jp.gitlab.io/spinel-data/6-46-30.ndjson.gz (106MB)
 
+## import source data, adding layer name and zoom levels
+```shell
+$ node import.js > 6-46-30.ndjson
+```
+## produce mbtiles from imported data
+```shell
+$ tippecanoe -f --read-parallel --drop-densest-as-needed --simplification=2 --minimum-zoom=6 --maximum-zoom=15 --base-zoom=15 --output=6-46-30.mbtiles 6-46-30.ndjson
+```
+
 # see also
 - [RFC8142: GeoJSON Text Sequences](https://tools.ietf.org/html/rfc8142)

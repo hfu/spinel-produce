@@ -3,6 +3,5 @@
   "src": [
     "https://osgeo-jp.gitlab.io/spinel-data/gmlk20.ndjson.gz",
     "https://osgeo-jp.gitlab.io/spinel-data/6-46-30.ndjson.gz"
-  ],
-  "dst": "imported.ndjson"
+  ]
 }
