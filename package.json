@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/hfu/spinel-produce#readme",
   "dependencies": {
+    "@mapbox/geojson-area": "^0.2.2",
     "config": "^2.0.1",
     "node-fetch": "^2.2.1"
   }
