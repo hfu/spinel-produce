@@ -171,35 +171,35 @@ module.exports = f => {
   }
 
   if (f.properties.amenity) {
-    f.tippecanoe = { layer: 'amenity', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'amenity', minzoom: 14, maxzoom: 15 }
     return flaps.building(f)
   }
   if (f.properties.historic) {
-    f.tippecanoe = { layer: 'historic', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'historic', minzoom: 13, maxzoom: 15 }
     return flaps.area(f)
   }
   if (f.properties.military) {
-    f.tippecanoe = { layer: 'military', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'military', minzoom: 13, maxzoom: 15 }
     return flaps.area(f)
   }
   if (f.properties.man_made) {
-    f.tippecanoe = { layer: 'man_made', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'man_made', minzoom: 13, maxzoom: 15 }
     return f
   }
   if (f.properties.power) {
-    f.tippecanoe = { layer: 'power', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'power', minzoom: 13, maxzoom: 15 }
     return f
   }
   if (f.properties.sport) {
-    f.tippecanoe = { layer: 'sport', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'sport', minzoom: 13, maxzoom: 15 }
     return f
   }
   if (f.properties.office) {
-    f.tippecanoe = { layer: 'office', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'office', minzoom: 13, maxzoom: 15 }
     return f
   }
   if (f.properties.craft) {
-    f.tippecanoe = { layer: 'craft', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'craft', minzoom: 14, maxzoom: 15 }
     return f
   }
   if (f.properties.public_transport) {
@@ -207,11 +207,11 @@ module.exports = f => {
     return flaps.building(f)
   }
   if (f.properties.tourism) {
-    f.tippecanoe = { layer: 'tourism', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'tourism', minzoom: 14, maxzoom: 15 }
     return f
   }
   if (f.properties.shop) {
-    f.tippecanoe = { layer: 'shop', minzoom: 11, maxzoom: 15 }
+    f.tippecanoe = { layer: 'shop', minzoom: 14, maxzoom: 15 }
     return f
   }
 
